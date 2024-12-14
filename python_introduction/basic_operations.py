@@ -1,5 +1,5 @@
-number1 = int("10")
-number2 = int("5")
+number1 = 10
+number2 = 5
 
 sum_result = number1 + number2
 diffference_result = number1 - number2
