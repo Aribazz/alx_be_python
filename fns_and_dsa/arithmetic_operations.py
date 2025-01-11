@@ -1,4 +1,4 @@
-def perform_operation (num1, num2, operation):
+def perform_operation(num1, num2, operation):
   if  operation == "add":
     return num1 + num2
   elif operation == "substract":
@@ -13,6 +13,6 @@ def perform_operation (num1, num2, operation):
      return "Invalid operation"
      
 if __name__ == "__main__":
-    print(perform_operation(5,0,"add"))
+    print(perform_operation(5, 0, "add"))
 
     
