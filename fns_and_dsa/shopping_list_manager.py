@@ -17,12 +17,17 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            pass
+            item = input("Enter the item to add:").strip()
+            shopping_list.append(item)
+            print(f"{item} has been added to the shopping list")
         elif choice == '2':
             # Prompt for and remove an item
-            pass
+            item = input("Enter the item to remove").strip()
+            shopping_list.remove(item)
+            print(f"{item} has been removed from the list").strip()
         elif choice == '3':
             # Display the shopping list
+            item = input("Enter the  ")
             pass
         elif choice == '4':
             print("Goodbye!")
