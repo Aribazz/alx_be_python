@@ -27,8 +27,12 @@ def main():
             print(f"{item} has been removed from the list").strip()
         elif choice == '3':
             # Display the shopping list
-            item = input("Enter the  ")
-            pass
+             if shopping_list:
+                print("\nYour Shopping List:")
+                for index, item in enumerate(shopping_list, start=1):
+                    print(f"{index}. {item}")
+            else:
+                print("Your shopping list is currently empty.")
         elif choice == '4':
             print("Goodbye!")
             break
