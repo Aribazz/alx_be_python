@@ -28,7 +28,7 @@ def main():
         elif choice == '3':
             print("Shopping List:")
             for item in shopping_list:
-                print(f"- {item}")
+                print(f" {item}")
         elif choice == '4':
             print("Goodbye!")
             break

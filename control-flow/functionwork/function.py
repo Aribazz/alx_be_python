@@ -93,6 +93,43 @@ outer()
 # import builtins
 # print(dir(builtins))
 
+# # OOP
+# class sheep:
+#     def __init__(self, name , color):
+#         self.name = name
+#         self.color = color
+#     def species(self):
+#         print(f"This {self.color} is the unique one among multitude.")
+
+
+# goat1 = sheep("BlackGoat" , "brown")
+# goat2 = sheep("BlackBrownGoat" , "golden")
+
+# print(goat1.species())
+# ///////////////////////////////////////////////////////////////////////////
+
+# RAISE 
+# def divide (x,y):
+#     if y == 0 :
+#         raise ZeroDivisionError("Division by zero is not allowed")
+#         return x / y
+
+
+# print(divide())
+
+#Sample inventory
+purchase_inventory ={
+    "apple" : 15,
+    "orange": 10,
+    "waterlemon": 5,
+    "banana": 3
+}
+
+def purchase_details(item,quantity):
+    try:
+        if purchase_inventory[item] == 0:
+            rasie ZeroDivisionError(item)
+            else:
 
  
 
