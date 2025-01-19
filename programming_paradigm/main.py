@@ -30,7 +30,7 @@ def main():
     else:
         print("Invalid command.")
 
-def mainone():
+def main():
     # Ensure the user provides exactly two arguments
     if len(sys.argv) != 3:
         print("Usage: python main.py <numerator> <denominator>")
@@ -42,8 +42,7 @@ def mainone():
 
     # Perform the division using safe_divide
     result = safe_divide(numerator, denominator)
-    print(f"The result of the division is {result: .1f}")
+    print(result)
 
 if __name__ == "__main__":
     main()
-    mainone()
