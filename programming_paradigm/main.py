@@ -29,5 +29,20 @@ def main():
     else:
         print("Invalid command.")
 
+def mainone():
+    # Ensure the user provides exactly two arguments
+    if len(sys.argv) != 3:
+        print("Usage: python main.py <numerator> <denominator>")
+        sys.exit(1)
+
+    # Retrieve numerator and denominator from command-line arguments
+    numerator = sys.argv[1]
+    denominator = sys.argv[2]
+
+    # Perform the division using safe_divide
+    result = safe_divide(numerator, denominator)
+    print(result)
+
 if __name__ == "__main__":
     main()
+    mainone()
