@@ -41,7 +41,7 @@ def mainone():
 
     # Perform the division using safe_divide
     result = safe_divide(numerator, denominator)
-    print(result)
+    print(f"The result of the division is {result: .1f}")
 
 if __name__ == "__main__":
     main()
