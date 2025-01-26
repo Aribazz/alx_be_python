@@ -1,6 +1,6 @@
 from book_class import Book  # Assuming Book is in book_class.py
 from library_system import Book, Library, EBook, PrintBook  # Assuming these classes are in library_system.py
-
+from polymorphism_demo import Shape, Rectangle, Circle
 def main():
     # SECTION FOR THE BOOK INSTANCE
     # Creating an instance of Book
@@ -32,6 +32,17 @@ def main():
 
     # List all books in the library
     my_library.list_books()
+
+    # SECTION THREE
+
+def main():
+    shapes = [
+             Rectangle(10, 5),
+             Circle(7)
+       ]
+
+    for shape in shapes:
+        print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
 
 if __name__ == "__main__":
     main()
