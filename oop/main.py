@@ -1,6 +1,9 @@
 from book_class import Book  # Assuming Book is in book_class.py
 from library_system import Book, Library, EBook, PrintBook  # Assuming these classes are in library_system.py
 from polymorphism_demo import Shape, Rectangle, Circle
+from class_static_methods_demo import Calculator
+
+
 def main():
     # SECTION FOR THE BOOK INSTANCE
     # Creating an instance of Book
@@ -43,6 +46,17 @@ def main():
 
     for shape in shapes:
         print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
+
+# FOURTH SECTION
+def main():
+    # Using the static method
+    sum_result = Calculator.add(10, 5)
+    print(f"The sum is: {sum_result}")
+
+    # Using the class method
+    product_result = Calculator.multiply(10, 5)
+    print(f"The product is: {product_result}")
+
 
 if __name__ == "__main__":
     main()
